@@ -1,5 +1,5 @@
 <apex:page standardController="Lead">
-  <!-- Page Header -->
+  <!-- Page Header Mani -->
   <apex:sectionHeader title="Lead Edit" subtitle="New Lead" />
   <apex:image value="http://bit.ly/17iLknp" styleClass="logo" />
   <apex:pageMessages />
