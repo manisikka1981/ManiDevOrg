@@ -1,0 +1,40 @@
+<apex:page standardController="Lead">
+  <!-- Page Header -->
+  <apex:sectionHeader title="Lead Edit" subtitle="New Lead" />
+  <apex:image value="http://bit.ly/17iLknp" styleClass="logo" />
+  <apex:pageMessages />
+    <!-- Begin Form -->
+  <apex:form >
+    <apex:pageBlock title="Rules of Lead" mode="edit">
+
+      <!-- Fields -->
+      <apex:pageBlockSection columns="3" showHeader="true" title="Membership Status">
+        <apex:inputField value="{!Lead.Status}" required="true" />
+        <apex:inputField value="{!Lead.FirstName}" required="true" />
+        <apex:inputField value="{!Lead.LastName}"  required="true" />
+        <apex:inputField value="{!Lead.Email}"     required="true" />
+        <apex:inputField value="{!Lead.Company}"     required="true" />
+      </apex:pageBlockSection>
+      <!-- Button Section -->
+      <apex:pageBlockButtons location="bottom">
+        <apex:commandButton action="{!save}" value="Add New Lead"/>
+      </apex:pageBlockButtons>
+    </apex:pageBlock>
+  </apex:form>
+  <!-- CSS -->
+  <style>
+    .logo {
+      float: right;
+      width: 60px;
+      margin: -65px 20px 0 0;
+    }
+    .rules {
+      color: red;
+      font-size: 18px;
+      font-family: Courier;      
+      margin: 10px 0 10px 30px;
+      float: left;
+      width: 100%;
+    }
+  </style>
+</apex:page>
